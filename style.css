@@ -1,0 +1,688 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_menu {
+    background-color: #222;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loupe {
+    margin-left: 41px;
+}
+
+.hamburger_menu {
+    background-color: #222222;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.profile {
+    margin-left: 25px;
+}
+
+.cart {
+    margin-left: 42px;
+}
+
+.menu_active__all {
+    padding: 32px 32px;
+}
+
+.menu_active.hidden {
+    display: none;
+}
+
+.menu_active {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: #fff;
+    width: 232px;
+}
+
+.menu_list a {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f6e6e;
+    padding-left: 31px;
+}
+
+.menu_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 11px;
+}
+
+.menu_close {
+    top: 16px;
+    right: 16px;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button_close {
+    height: 10px;
+}
+
+.menu_heading {
+    margin-bottom: 4px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+}
+
+.menu_text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f16d7f;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.show_case {
+    min-width: 320px;
+    background-color: #F1E4E6;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 65px;
+}
+
+.show_case_img {
+    width: 100%;
+}
+
+.show_case_text {
+    font-family: "Lato", sans-serif;
+    color: #222;
+    font-weight: 700;
+    font-size: 32px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-left: 60px;
+}
+
+.the_brand {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.fashion {
+    color: #f16d7f;
+}
+
+.promo_1 {
+    background-image: url(img/promotions_1.jpg);
+}
+
+.promo_2 {
+    background-image: url(img/promotions_2.jpg);
+}
+
+.promo_3 {
+    background-image: url(img/promotions_3.jpg);
+}
+
+.promo_4 {
+    background-image: url(img/promotions_4.jpg);
+}
+
+.content_center {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.promotions {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 96px;
+}
+
+.promo_1, .promo_2, .promo_3 {
+    min-height: 247px;
+    grid-column: span 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.promo_1, .promo_2, .promo_3 img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+
+.promo_4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    background-position: center;
+    grid-column: span 3;
+    color: #fff;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    height: 180px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo_pink_word {
+    font-weight: 700;
+    font-size: 24px;
+    color: #f16d7f;
+}
+
+.product_catalog {
+    margin-bottom: 95px;
+}
+
+.product_catalog_title {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+
+.product_catalog_subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.product_1 img, .product_2 img, .product_3 img, .product_4 img, .product_5 img, .product_6 img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.product_1, .product_2, .product_3, .product_4, .product_5, .product_6 {
+    overflow: hidden; /* Обрезаем часть overlay, выходящую за пределы изображения */
+}
+
+.product_image_container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product_image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 56, 56, 0.8); /* Цвет затемнения */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.add_to_cart_button {
+    display: flex;
+    justify-content: center;
+}
+
+.product_cart_icon {
+    width: 26px; 
+    height: 24px;
+    margin-right: 10px; 
+}
+
+.overlay button {
+    background-color: transparent;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    opacity: 0;
+    align-items: center; /* Выравнивание иконки и текста по вертикали */
+}
+
+.overlay button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Применяем эффект наведения ко всем карточкам */
+.product_1:hover .overlay,
+.product_2:hover .overlay,
+.product_3:hover .overlay,
+.product_4:hover .overlay,
+.product_5:hover .overlay,
+.product_6:hover .overlay {
+    opacity: 1;
+}
+
+.product_1:hover .overlay button,
+.product_2:hover .overlay button,
+.product_3:hover .overlay button,
+.product_4:hover .overlay button,
+.product_5:hover .overlay button,
+.product_6:hover .overlay button {
+    opacity: 1; /* Отображаем кнопку при наведении */
+}
+
+.product_1:hover .product_image,
+.product_2:hover .product_image,
+.product_3:hover .product_image,
+.product_4:hover .product_image,
+.product_5:hover .product_image,
+.product_6:hover .product_image {
+    filter: brightness(60%); /* Уменьшаем яркость изображения при наведении */
+}
+
+
+.info_and_price {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    background-color: #f8f8f8;
+}
+
+.product_info_title {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
+
+.product_info {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #5d5d5d;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f16d7f;
+}
+
+.bottom_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+
+.browse_button {
+    font-family: "Lato", sans-serif;
+    padding: 15px 39px;
+    border: 1px solid #FF6A6A;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f26376;
+}
+
+.browse_button:hover {
+    color: #fff;
+    background-color: #F16D7F
+}
+
+.features {
+    background-color: #222224;
+    padding-left: 19%;
+    padding-right: 19%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+.feature_1, .feature_2, .feature_3 {
+    text-align: center;
+}
+
+.feature_title {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #fbfbfb;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+
+.feature_text {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #fbfbfb;
+}
+
+.subscription {
+    background-image: url(img/photo\ subscribe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subscribe_text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #222224;
+    padding-bottom: 40px;
+    
+}
+
+.subscribe_photo {
+    margin-top: 97px;
+    margin-bottom: 133px;
+    text-align: center;
+}
+
+.sub_img {
+    margin-bottom: 30px;
+}
+
+.signing {
+    margin-top: 150px;
+    margin-bottom: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe_title {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.lower_title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.signing form {
+    display: flex; /* Flexbox для размещения элементов в одну линию */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    max-width: 375px; /* Ширина формы */
+    height: 48px; /* Высота формы */
+    border-radius: 30px; /* Скругленные углы */
+    overflow: hidden; /* Убираем любые выходящие за границы элементы */
+    background-color: #E1E1E1; /* Цвет фона формы */
+}
+
+.signing input[type="email"] {
+    flex: 1 1 70%; /* Поле ввода занимает 70% ширины */
+    padding-left: 24px; /*   Внутренние отступы для поля ввода */
+    border: none; /* Убираем границу поля ввода */
+    height: 100%; /* Высота поля ввода равна высоте формы */
+    font-size: 16px; /* Размер шрифта */
+    background-color: #E1E1E1; /* Цвет фона поля ввода */
+    border-radius: 30px 0 0 30px; /* Скругленные углы слева */
+}
+
+input[type="email"]::placeholder {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+}
+
+.signing button {
+    flex: 1 1 30%; /* Кнопка занимает 30% ширины */
+    padding: 16px; /* Внутренние отступы для кнопки */
+    border: none; /* Убираем границу кнопки */
+    background-color: #E05C6E; /* Цвет фона кнопки */
+    color: #FBEBED; /* Цвет текста на кнопке */
+    font-size: 14px; /* Размер шрифта на кнопке */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    font-weight: 400;
+    border-radius: 0 30px 30px 0; /* Скругленные углы справа */
+}
+
+.footer {
+    background-color: #222224;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyright_text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fbfbfb;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    gap: 7px;
+}
+
+.social_icon:hover .background_icon_color {
+    fill: #F16D7F; /* изменение цвета фона при наведении */
+}
+
+.social_icon:hover .icon_color {
+    fill: #fff; /* изменение цвета иконки при наведении */
+}
+
+/*Планшет*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .header_menu {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .content_center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .promotions {
+        gap: 18px;
+    }
+
+    .promo_4 {
+        height: 116px;
+    }
+
+    .product_catalog {
+        margin-bottom: 64px;
+    }
+
+    .products_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe_photo {
+        margin-bottom: 48px;
+    }
+
+    .signing {
+        margin-top: 0px;
+        margin-bottom: 140px;
+    }
+
+    .footer {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+}
+
+/*Мобилка*/
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .header_menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .content_center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .profile, .cart, .show_case_img {
+        display: none
+    }
+
+    .show_case {
+        display: flex;
+        padding-top: 148px;
+        padding-bottom: 148px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .show_case_text {
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .the_brand {
+        font-weight: 900;
+        font-size: 38px;
+    }
+
+    .fashion {
+        color: #f16d7f;
+    }
+
+    .promotions {
+        grid-template-columns: 1fr;
+    }
+
+    .promo_1, .promo_2, .promo_3 {
+        grid-column: span 1; 
+    }
+
+    .promo_4 {
+        grid-column: span 1; 
+        height: 111px;
+    }
+
+    .products_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe_photo {
+        margin-bottom: 48px;
+    }
+
+    .signing {
+        margin-top: 0px;
+        margin-bottom: 140px;
+    }
+
+    .footer {
+        flex-direction: column; /* Размещаем элементы вертикально */
+        align-items: center; /* Центрируем элементы по горизонтали */
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+
+    .socials {
+        order: -1; /* Размещаем иконки социальных сетей перед текстом авторских прав */
+        margin-top: 43px;
+        margin-bottom: 40px;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+}
